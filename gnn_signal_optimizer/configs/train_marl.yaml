@@ -1,0 +1,16 @@
+env:
+  num_junctions: 4
+  state_dim: 6
+model:
+  action_dim: 4
+trainer:
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_ratio: 0.2
+  actor_lr: 0.0003
+  critic_lr: 0.001
+  epochs: 2
+  batch_size: 32
+  max_steps: 50
+  episodes: 2
+checkpoint: checkpoints/marl_policy.pt

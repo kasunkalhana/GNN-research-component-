@@ -1,0 +1,6 @@
+control:
+  min_green: 5.0
+  max_green: 60.0
+  yellow_duration: 3.0
+  uncertainty_threshold: 0.3
+  fallback_mode: queue

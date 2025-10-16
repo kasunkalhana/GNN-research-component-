@@ -1,0 +1,11 @@
+model:
+  input_dims:
+    junction: 6
+    lane: 5
+    vehicle: 3
+  hgat:
+    hidden_dim: 64
+    dropout: 0.2
+    history: 4
+    num_actions: 4
+  checkpoint: checkpoints/policy.pt

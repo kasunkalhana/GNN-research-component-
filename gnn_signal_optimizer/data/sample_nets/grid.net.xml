@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<net version="1.9" junctions="true">
+    <location netOffset="0.00,0.00" convBoundary="0.00,0.00,300.00,300.00" origBoundary="0.00,0.00,300.00,300.00"/>
+    <edge id="E0" from="J0" to="J1" numLanes="1" speed="13.9" length="100"/>
+    <edge id="E1" from="J1" to="J0" numLanes="1" speed="13.9" length="100"/>
+    <edge id="E2" from="J0" to="J2" numLanes="1" speed="13.9" length="100"/>
+    <edge id="E3" from="J2" to="J0" numLanes="1" speed="13.9" length="100"/>
+    <edge id="E4" from="J1" to="J3" numLanes="1" speed="13.9" length="100"/>
+    <edge id="E5" from="J3" to="J1" numLanes="1" speed="13.9" length="100"/>
+    <edge id="E6" from="J2" to="J3" numLanes="1" speed="13.9" length="100"/>
+    <edge id="E7" from="J3" to="J2" numLanes="1" speed="13.9" length="100"/>
+    <junction id="J0" type="traffic_light" x="100" y="200" incLanes="E1" intLanes="" shape="90,210 110,210 110,190 90,190"/>
+    <junction id="J1" type="traffic_light" x="200" y="200" incLanes="E0" intLanes="" shape="190,210 210,210 210,190 190,190"/>
+    <junction id="J2" type="traffic_light" x="100" y="100" incLanes="E3" intLanes="" shape="90,110 110,110 110,90 90,90"/>
+    <junction id="J3" type="traffic_light" x="200" y="100" incLanes="E6" intLanes="" shape="190,110 210,110 210,90 190,90"/>
+</net>

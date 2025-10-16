@@ -1,0 +1,21 @@
+mode: train
+steps: 3600
+output: data/ssl_rollouts.parquet
+dataset: data/ssl_rollouts.parquet
+checkpoint: checkpoints/ssl_encoder.pt
+phases:
+  J0: ["GrGr", "rGrG"]
+  J1: ["GrGr", "rGrG"]
+  J2: ["GrGr", "rGrG"]
+  J3: ["GrGr", "rGrG"]
+trainer:
+  epochs: 1
+  lr: 0.001
+  batch_size: 8
+  history: 4
+model:
+  hidden_dim: 32
+env:
+  sumocfg: data/sample_nets/grid.sumocfg
+  step_length: 1.0
+  gui: false
